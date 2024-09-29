@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Profile | Mayobook</title>
+	</head>
+	<style type="text/css">
+		#black_bar{
+
+			height: 50px;
+			background-color: rgb(49,51,56);
+			color: white;
+		}
+		
+		#search_box{
+
+			width: 400px;
+			height: 20px;
+			border-radius: 5px;
+			border: none;
+			padding: 4px;
+			font-size: 14px;
+			background-image: url(search.png);
+			background-repeat: no-repeat;
+			background-position: right;
+
+		}
+
+		#profile_pic{
+
+			width: 150px;
+			border-radius: 50%;
+			border: solid thin white;
+
+		}
+
+
+		#menu_button{
+			width: 100px;
+			display: inline-block;
+			margin: 2px;
+		}
+
+		#friends_img{
+			width: 75px;
+			float: left;
+			margin: 8px;
+		}
+
+		#friends_bar{
+
+			background-color: rgb(17,18,20) ;
+			min-height: 100%;					/* changed it */
+			color: #aaa;
+			padding: 8px;
+			color: white;
+			text-align:center;
+			font-size: 20px;
+
+		}
+
+		#friends{
+
+			clear: both;	/* dunno exactly but it aligned ung mga naka float sa left na pics */	
+			font-size: 12px;
+			font-weight: bold;
+			color: white;
+
+		}
+
+		#divdividerimprov{
+			background-color: white;
+			min-height:10px;
+			background-color: rgb(17,18,20);
+		}
+
+		textarea{
+
+			width: 500px;
+			border: none;
+			font-family: tahoma;
+			font-size: 14px;
+			height: 60px;
+			background-color: rgb(17,18,20);
+			color: white;
+
+
+			
+		}
+
+		#post_button{
+
+			float: left;
+			background-color: rgb(33,125,116);
+			border: none;
+			color: white;
+			padding: 4px;
+			font-size: 14px;
+			border-radius: 2px;
+			width: 50;
+			font-weight: bold;
+
+		}
+
+		#post_bar{
+
+			margin-top: 20px;
+			background-color: rgb(17,18,20);
+			padding: 10px;
+			width: 500px;
+
+		}
+
+		#post{
+
+			padding: 4px;
+			font-size: 13px;
+			display: flex;
+
+		}
+		a{
+			color: rgb(33,125,116);
+		}
+
+	</style>
+
+	<body style="font-family: tahoma;background-color: rgb(17,18,20);">
+
+		<br>
+
+		<!-- top bar -->
+
+		<div id="black_bar">
+			<div style="width: 800px; margin:auto; font-size: 30px;">
+				XXXbook &nbsp &nbsp <input type="text" id="search_box" placeholder="Search"> <!-- &nbsp for space between text -->
+				<img src="social images/selfie.png" style="width: 50px; float: right;">
+			</div>				
+		</div>
+
+		<!-- cover area -->
+		<div style="width: 800px; margin:auto; min-height: 400px; background-color: rgb(49,51,56); border-radius: 10px;">
+
+			
+			<div id="divdividerimprov"></div>
+
+			<!-- below cover area-->
+			<div style="display: flex;color:white;">											<!-- flex is like stretching -->
+
+				<!--friends area-->
+				<div style="min-height: 400px; flex:1;">
+
+					<div id="friends_bar">
+
+						<img id="profile_pic" src="social images/selfie.png"><br>
+						Kyla
+					</div>
+					
+
+
+				</div>	
+
+				<!-- post area-->
+				<div style="min-height: 400px; flex:2.5; padding: 20px; padding-right:0px;">
+
+					<div style="border: thin solid: white; padding: 10px;width: 520px">
+						<textarea placeholder="Whats on your mind?"></textarea>
+						<input id="post_button" type="Submit" value="Post">
+					</div>
+					<br>
+				<!-- post 1 -->
+					<div id="post_bar">
+
+						<div id="post">
+							<div>
+								<img src="social images/user1.jpg" style="width: 75px; margin-right: 5px"><div></div>
+							</div>
+							<div>
+								<div style="font-weight: bold; color:  rgb(33,125,116)"> Jimmy </div>
+								XXXXXXXXXXXXXX
+								<br/><br/>
+								<a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999"> April 23 2020</span>
+							</div>
+						</div>
+						
+					</div>
+				<!-- post 2 -->
+					<div id="post_bar">
+
+						<div id="post">
+							<div>
+								<img src="social images/user1.jpg" style="width: 75px; margin-right: 5px"><div></div>
+							</div>
+							<div>
+								<div style="font-weight: bold; color:  rgb(33,125,116)"> Timmy </div>
+								XXXXXXXXXXXXXX
+								<br/><br/>
+								<a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999"> April 23 2020</span>
+							</div>
+						</div>
+						
+					</div>
+
+				<!-- post 3 -->
+					<div id="post_bar">
+
+						<div id="post">
+							<div>
+								<img src="social images/user1.jpg" style="width: 75px; margin-right: 5px"><div></div>
+							</div>
+							<div>
+								<div style="font-weight: bold; color:  rgb(33,125,116)"> Kimmy </div>
+								XXXXXXXXXXXXXX
+								<br/><br/>
+								<a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999"> April 23 2020</span>
+							</div>
+						</div>
+						
+					</div>
+
+					
+				</div>
+			</div>
+
+
+		</div>
+
+	</body>
+</html>
